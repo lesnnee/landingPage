@@ -41,3 +41,40 @@ a{
     flex-direction: row;
     justify-content: space-around;
 }
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+#hero{
+    width: 100vw;
+    height: 92.5vh;
+}
+
+#hero_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+#hero_wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background: url(https://image.fonwall.ru/o/ai/chashka-zyorna-kofe.jpg?auto=compress&fit=crop&w=1366&h=768&domain=img1.fonwall.ru) no-repeat center/cover;
+    filter: blur(5px) brightness(0.6); 
+    z-index: -1; 
+}
+
+#hero_content{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-family: "Poppins", sans-serif;
+}
