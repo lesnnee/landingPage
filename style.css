@@ -1,0 +1,43 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h1 {
+color: #C9A66B;
+font-size: 48px;
+}
+
+header {
+    width: 100%;
+    background-color: #4B2E2E;
+    display: flex;
+}
+
+a{
+    color: #F5F0E1;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.header_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_logo{
+    flex: 0.4;
+}
+
+.header_menu{
+    flex: 0.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
