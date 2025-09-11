@@ -21,6 +21,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    font-family: "Poppins", sans-serif;
 }
 
 header a{
@@ -331,4 +332,14 @@ button:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     object-fit: cover;
     object-position: 20% 30%;
+}
+
+footer{
+    background-color:#4B2E2E;
+    color:#C9A66B;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
 }
