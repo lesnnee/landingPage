@@ -23,7 +23,7 @@ header {
     z-index: 1000;
 }
 
-a{
+header a{
     color: #F5F0E1;
 }
 
@@ -271,4 +271,64 @@ button:hover {
     background: #8c5c3a;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#contacts{
+    background-color: #F5F0E1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts_title{
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.contacts_content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.contacts_text {
+    flex: 1;
+    min-width: 250px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 20px;
+}
+
+.contacts_text a {
+    color: #6b4226;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contacts_text a:hover {
+    text-decoration: underline;
+}
+
+.contacts_socials {
+    margin-top: 27px;
+    font-weight: bold;
+}
+
+.contacts_map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contacts_map img {
+    width: 400px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    object-fit: cover;
+    object-position: 20% 30%;
 }
