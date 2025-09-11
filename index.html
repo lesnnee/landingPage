@@ -16,9 +16,17 @@
                 <div class="header_logo">
                     <h1>Coffee Time</h1>
                 </div>
-                <div class="header_menu">
-                    <a href="#hero">ГЛАВНАЯ</a> <a href="#about">О КАФЕ</a> <a href="#menu">МЕНЮ</a> <a href="#reservation">БРОНИРОВАНИЕ</a> <a href="#contacts">КОНТАКТЫ</a>
-                </div>
+
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="burger">&#9776;</label>
+
+            <div class="header_menu">
+                <a href="#hero" onclick="document.getElementById('menu-toggle').checked=false;">ГЛАВНАЯ</a>
+                <a href="#about" onclick="document.getElementById('menu-toggle').checked=false;">О КАФЕ</a>
+                <a href="#menu" onclick="document.getElementById('menu-toggle').checked=false;">МЕНЮ</a>
+                <a href="#reservation" onclick="document.getElementById('menu-toggle').checked=false;">БРОНИРОВАНИЕ</a>
+                <a href="#contacts" onclick="document.getElementById('menu-toggle').checked=false;">КОНТАКТЫ</a>
+            </div>
             </div>
         </div>
     </header>

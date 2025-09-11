@@ -60,6 +60,12 @@ header a{
     justify-content: space-around;
 }
 
+.menu-toggle, .burger {
+  display: none;
+}
+
+
+
 main{
     display:flex;
     flex-direction: column;
@@ -351,4 +357,213 @@ footer{
     padding: 10px;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 480px) {
+    .header_wrapper {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .header_menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        background: #4B2E2E;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 15px;
+        z-index: 999;
+    }
+
+    .menu-toggle,
+        .burger {
+        display: block;
+    }
+
+    .burger {
+        font-size: 28px;
+        color: #F5F0E1;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .header_menu {
+        display: flex;
+    }
+
+    .header_menu a {
+        font-size: 18px;
+    }
+
+    #hero_content {
+        font-size: 26px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #about_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #interior {
+        width: 100%;
+    }
+
+    #about_text {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    #menu_content {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card h5 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    #form_content {
+        width: 100%;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .form_div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    .contacts_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contacts_map img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contacts_text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 16px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    .content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .header_menu {
+        flex: 1;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .header_menu a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    #about_title,
+    #menu_title,
+    #reservation_title,
+    #contacts_title {
+        font-size: 28px;
+    }
+
+    main{
+        margin-top: -2px;
+    }
+
+    #about_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #about_img img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+    }
+
+    #about_text {
+        padding-right: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #menu_content {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+        row-gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #form_content {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .form_div {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .contacts_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contacts_map img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
 }
