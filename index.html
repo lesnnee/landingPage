@@ -27,7 +27,7 @@
                 <div id="hero_content">
                     <h2>Кофе, который вдохновляет</h2>
                     <h4>Натуральные зерна. Уютная атмосфера. Лучший вкус.</h4>
-                </div>  
+                </div>
         </section>
         <section id="about">
             <h3 id="about_title">О НАС</h3>
@@ -87,8 +87,38 @@
             </div>
         </section>
         <section id="reservation">
+            <h3 id="reservation_title">ЗАБРОНИРОВАТЬ</h3>
+            <form id="form_content">
+                <div class="form_div">
+                    <div class="form_group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                </div>
+                <div class="form_div">
+                    <div class="form_group">
+                        <label for="people">Количество человек:</label>
+                        <input type="number" id="people" name="people" min="1" max="20" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="date">Дата:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="time">Время:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <button type="submit">Отправить заявку</button>
+            </form>
         </section>
-        <section id="contacts"></section>
+        <section id="contacts">
+            <h3 id="contacts_title">КОНТАКТЫ</h3>
+        </section>
     </main>
     <footer></footer>
 </body>
